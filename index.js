@@ -1,16 +1,4 @@
-const cardNumber = document.getElementById("number");
-const numberInp = document.getElementById("card_number");
-const nameInp = document.getElementById("card_name");
-const cardName = document.getElementById("name");
-const cardMonth = document.getElementById("month");
-const cardYear = document.getElementById("year");
-const monthInp = document.getElementById("card_month");
-const yearInp = document.getElementById("card_year");
-const cardCvc = document.getElementById("cvc");
-const cvcInp = document.getElementById("card_cvc");
-const submitBtn = document.getElementById("submit_btn");
-const compeleted = document.querySelector(".thank");
-const form = document.querySelector("form");
+/*creando las funciones usando las constantes creadas en el sistema*/
 
 function setCardNumber(e) {
     cardNumber.innerText = format(e.target.value);
@@ -27,7 +15,7 @@ function setCardYear(e) {
 function setCardCvc(e) {
   cardCvc.innerText = format(e.target.value);
 }
-
+/*creando la funcion en caso de que la funcion de error*/ 
 function handleSubmit(e) {
     e.preventDefault();
     if (!nameInp.value) {
